@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'odachi';
+    src: url('../Odachi.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* -------------------------------ASIDE------------------------------*/
+
+header {
+    height: 100px;
+    background-color: #1e1e1e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu, ul, header {
+    display: flex;
+    flex-direction: row;
+}
+
+.titre1, .reseaux, nav {
+    position: absolute;
+}
+
+.titre1 {
+    left: 10%;
+    color: white;
+    font-family: spartan;
+}
+
+nav {
+    right: 15%;
+}
+
+.aheader {
+    color: white;
+    margin-right: 20px;
+    font-family: poppins;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+.aheader:hover {
+    color: tomato;
+}
+
+.reseaux {
+    right: 10%;
+}
+
+i {
+    margin-right: 5px;
+    margin-left: 5px;
+    color: white;
+    font-size: 40px;
+    transition: 0.5s all;
+}
+
+i:hover {
+    
+    color: tomato;
+}
