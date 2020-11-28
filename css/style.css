@@ -33,13 +33,24 @@
 
 header {
     height: 10vh;
-    background-color: #1e1e1e75;
     width: 100%;
     display: flex;
     align-items: center;
+    color: black;
+    background-color: #1e1e1e;
 
     position: fixed;
     z-index: 99999;
+    transition: 1s all;
+}
+
+header.sticky {
+    background-color: #1e1e1e7a;
+    height: 7vh;
+}
+
+header.sticky .titre1 {
+    font-size: 30px;
 }
 
 .menu, ul, header {
@@ -53,9 +64,10 @@ header {
 
 .titre1 {
     left: 10%;
-    color: white;
     font-family: 'bungeeshade';
     font-size: 40px;
+    color: white;
+    transition: 1s all;
 }
 
 nav {
@@ -63,11 +75,11 @@ nav {
 }
 
 .aheader {
-    color: white;
     margin-right: 20px;
     font-family: poppins;
     text-transform: uppercase;
     transition: 0.5s all;
+    color: white;
 }
 
 .aheader:hover {
@@ -81,9 +93,9 @@ nav {
 i {
     margin-right: 5px;
     margin-left: 5px;
-    color: white;
     font-size: 40px;
     transition: 0.5s all;
+    color: white;
 }
 
 i:hover {
