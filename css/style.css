@@ -15,14 +15,31 @@
     text-decoration: none;
 }
 
+/* -------------------------------SCROLLBAR------------------------------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+  }
+
 /* -------------------------------HEADER------------------------------*/
 
 header {
     height: 10vh;
-    background-color: #1e1e1e;
+    background-color: #1e1e1e75;
     width: 100%;
     display: flex;
     align-items: center;
+
+    position: fixed;
+    z-index: 99999;
 }
 
 .menu, ul, header {
@@ -77,6 +94,57 @@ i:hover {
 /* -------------------------------presentation------------------------------*/
 
 .presentation {
-    height: 90vh;
+    height: 100vh;
     background-color: tomato;
+    display: flex;
+    align-items: center;
+}
+
+.presentaion-p {
+    display: flex;
+    flex-direction: column;
+}
+
+.ppropos {
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+    text-align: justify;
+    font-family: poppins;
+}
+
+.ppropos1 {
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+
+.ppropos2 {
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+.ppropos3 {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.apropos {
+    color: rgb(230, 230, 230);
+}
+
+.moi {
+    position: absolute;
+    right: 10%;
+    width: 25%;
+    border-radius: 5%;
+    transition: 0.5s all;
+}
+
+
+/* -------------------------------competences------------------------------*/
+
+.skills {
+    height: 100vh;
+    background-color: #1e1e1e;
 }

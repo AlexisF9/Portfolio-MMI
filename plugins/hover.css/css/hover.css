@@ -2157,8 +2157,8 @@
   left: 0;
   right: 100%;
   bottom: 0;
-  background: tomato;
-  height: 4px;
+  background: rgb(230, 230, 230);
+  height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
   -webkit-transition-duration: 0.3s;
