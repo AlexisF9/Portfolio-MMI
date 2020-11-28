@@ -13,6 +13,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 /* -------------------------------SCROLLBAR------------------------------*/
@@ -87,7 +88,7 @@ nav {
 }
 
 .reseaux {
-    right: 10%;
+    right: 5%;
 }
 
 i {
@@ -107,9 +108,9 @@ i:hover {
 
 .presentation {
     height: 100vh;
-    background-color: tomato;
     display: flex;
     align-items: center;
+    background-image: url("../img/wallpaper.jpg");
 }
 
 .presentaion-p {
@@ -117,11 +118,25 @@ i:hover {
     flex-direction: column;
 }
 
+.presentation-h {
+    font-family: spartan;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.separation {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20%;
+    width: 100px;
+    border-top: 3px solid black;
+}
+
 .ppropos {
-    padding-left: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 40%;
+    padding-left: 20%;
+    padding-right: 20%;
     text-align: justify;
     font-family: poppins;
 }
@@ -142,15 +157,14 @@ i:hover {
 }
 
 .apropos {
-    color: rgb(230, 230, 230);
+    color: tomato;
 }
 
-.moi {
+.arrow {
+    width: 10%;
     position: absolute;
-    right: 10%;
-    width: 25%;
-    border-radius: 5%;
-    transition: 0.5s all;
+    bottom: 0;
+    left: 45%;
 }
 
 
@@ -159,4 +173,58 @@ i:hover {
 .skills {
     height: 100vh;
     background-color: #1e1e1e;
+}
+
+
+
+/* -------------------------------RESPONSIVE------------------------------*/
+
+@media all and (max-width: 1450px) {
+    .titre1 {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .aheader {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 1040px) {
+    .titre1 {
+        left: 5%;
+    }
+}
+
+@media all and (max-width: 970px) {
+    nav {
+        display: none;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .presentation-h {
+        font-size: 15px;
+    }
+    .ppropos {
+        font-size: 15px;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .reseaux {
+        right: 5%;
+    }
+    .arrow {
+        display: none;
+    }
+    .ppropos, .presentation-h {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .separation {
+      margin-left: 10%;  
+    }
 }
