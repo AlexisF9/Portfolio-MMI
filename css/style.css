@@ -16,6 +16,10 @@
     scroll-behavior: smooth;
 }
 
+.erreur {
+    display: none;
+}
+
 /* -------------------------------SCROLLBAR------------------------------*/
 
 ::-webkit-scrollbar {
@@ -111,6 +115,8 @@ i:hover {
     display: flex;
     align-items: center;
     background-image: url("../img/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .presentaion-p {
@@ -172,7 +178,40 @@ i:hover {
 
 .skills {
     height: 100vh;
-    background-color: #1e1e1e;
+    background-color: white;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*.div-p-logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.p-logo {
+
+}*/
+
+.ptest {
+    color: white;
+}
+
+.logo {
+    width: 10%;
+    transition: 1s all;
+}
+
+.logo:hover {
+    transform: scale(1.5);
 }
 
 
@@ -210,6 +249,10 @@ i:hover {
     .ppropos {
         font-size: 15px;
     }
+    .arrow {
+        width: 20%;
+        left: 40%;
+    }
 
 }
 
@@ -217,14 +260,47 @@ i:hover {
     .reseaux {
         right: 5%;
     }
-    .arrow {
-        display: none;
-    }
     .ppropos, .presentation-h {
         padding-left: 10%;
         padding-right: 10%;
     }
     .separation {
       margin-left: 10%;  
+    }
+}
+
+@media all and (max-width: 470px) {
+    .reseaux {
+        display: none;
+    }
+    .titre1 {
+        position: initial;
+        font-size: 25px;
+    }
+    header {
+        justify-content: center;
+        height: 8vh;
+    }
+    .presentation-h {
+        font-size: 12px;
+    }
+    .ppropos {
+        font-size: 12px;
+    }
+}
+
+
+@media all and (max-height: 600px) {
+    header, .presentation, .skills {
+        display: none;
+    }
+    .erreur {
+        height: 100vh;
+        display: block;
+        font-family: poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
