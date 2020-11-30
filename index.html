@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alexis Flacher</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./plugins/animate.css/source/animate.css">
     <link rel="stylesheet" href="./plugins/hover.css/css/hover.css">
@@ -50,22 +50,28 @@
 
         <div class="web">
             <h1 class="h-web">Compétences WEB</h1>
-            <div class="div-stat">
+            <div class="icones-web">
+                <img src="./img/html.png">
+                <img src="./img/css.png">
+                <img src="./img/js.png">
+                <img src="./img/php.png">
+            </div>
+            <div class="div-stat tagline">
                 <div class="stat stat1">
                     <h1 class="h-stat">HTML</h1>
                 </div>
             </div>
-            <div class="div-stat">
+            <div class="div-stat tagline2">
                 <div class="stat stat2">
                     <h1 class="h-stat">CSS</h1>
                 </div>
             </div>
-            <div class="div-stat">
+            <div class="div-stat tagline3">
                 <div class="stat stat3">
                     <h1 class="h-stat">JavaScript</h1>
                 </div>
             </div>
-            <div class="div-stat">
+            <div class="div-stat tagline4">
                 <div class="stat stat4">
                     <h1 class="h-stat">PHP</h1>
                 </div>
@@ -74,86 +80,33 @@
 
         <div class="graph">
             <h1 class="h-graph">Compétences graphique</h1>
-            <div class="div-stat">
+            <div class="icones-graph">
+                <img src="./img/photoshop.png">
+                <img src="./img/illustrator.png">
+                <img src="./img/premiere.png">
+                <img src="./img/indesign.webp">
+            </div>
+            <div class="div-stat tagline5">
                 <div class="stat graph-stat1">
                     <h1 class="h-stat">Photoshop</h1>
                 </div>
             </div>
-            <div class="div-stat">
+            <div class="div-stat tagline6">
                 <div class="stat graph-stat2">
                     <h1 class="h-stat">Illustrator</h1>
                 </div>
             </div>
-            <div class="div-stat">
+            <div class="div-stat tagline7">
                 <div class="stat graph-stat3">
                     <h1 class="h-stat">Première Pro</h1>
                 </div>
             </div>
-            <div class="div-stat">
+            <div class="div-stat tagline8">
                 <div class="stat graph-stat4">
                     <h1 class="h-stat">InDesign</h1>
                 </div>
             </div>
         </div>
-
-        <!--
-        <a href="#popup1"><img class="logo" src="./img/html.png" alt=""></a>
-        <a href="#popup1"><img class="logo" src="./img/css.png" alt=""></a>
-        <a href="#popup2"><img class="logo" src="./img/js.png" alt=""></a>
-        <a href="#popup3"><img class="logo" src="./img/adobe.png" alt=""></a>
-
-        
-        <div id="popup1" class="popup">
-            <h2>HTML / CSS</h2>
-            <a class="close" href="#2">&times;</a>
-            <div class="content">
-                <p>J'ai commencé à apprendre le HTML et le CSS en terminal grâce à des tutos et des cours gratuit sur internet. Durant plusieurs
-                mois je me suis entrainé pour pouvoir créer mon premier site en fin d'année que j'ai intégré dans ma lettre de motivation
-                pour pouvoir postuler dans le DUT MMI de Grenoble.</p>
-                <p class="separation2"></p>
-                <p>Aujourd'hui je suis capable de créer des sites responsive design et créatif. Je maitrise l'installation de framework
-                comme que Bootstrap </p>
-            </div>
-            <div class="div-stat">
-                <div class="stat1">
-                    80%
-                </div>
-            </div>
-        </div>
-
-        <div id="popup2" class="popup">
-            <h2>JavaScript</h2>
-            <a class="close" href="#2">&times;</a>
-            <div class="content">
-                <p>J'ai commencé l'apprentissage du JavaScript et de l'intégration de plugin JS durant ma premmière année de DUT MMI.
-                Cette année j'ai commencé l'apprentissage du TypeScript et j'approfondi mes connaissances dans se language avec la réalisation
-                d'animations dans des sites statique durant des projets en intégration multimédia ou avec la création de mon portfolio.</p>
-                <p class="separation2"></p>
-                <p>Ajourd'hui je suis capable d'intégrer des plugins JS et du code simple pour réaliser des animations.</p>
-            </div>
-            <div class="div-stat">
-                <div class="stat2">
-                    50%
-                </div>
-            </div>
-        </div>
-
-        <div id="popup3" class="popup">
-            <h2>Suite Adobe</h2>
-            <a class="close" href="#2">&times;</a>
-            <div class="content">
-                <p>Durant mon DUT MMi j'ai appris les bases dans les logiciels de la suite Adobe : Photoshop, Illustrator, Première Pro, Indesign
-                et Audition.</p>
-                <p class="separation2"></p>
-                <p>Durant différents projets dans formation, j'ai pû approfondires mes connaissances dans ses différents logicels avec la
-                réalisation d'affiches, d'infographies, de montages vidéos profesionnels.</p>
-            </div>
-            <div class="div-stat">
-                <div class="stat3">
-                    70%
-                </div>
-            </div>
-        </div>-->
 
     </section>
 
@@ -165,8 +118,19 @@
 
     </section>
 
-    <script src="jquery.js"></script>
-    <script>
+    <script src="./jquery.js"></script>
+    <script src="./plugins/scrollreveal-master/dist/scrollreveal.js"></script>
+    <script type="text/javascript">
+        ScrollReveal().reveal('.tagline', { delay: 300, reset: true, distance: '100px', origin: 'left'});
+        ScrollReveal().reveal('.tagline2', { delay: 400, reset: true, distance: '100px', origin: 'left'});
+        ScrollReveal().reveal('.tagline3', { delay: 500, reset: true, distance: '100px', origin: 'left'});
+        ScrollReveal().reveal('.tagline4', { delay: 600, reset: true, distance: '100px', origin: 'left'});
+
+        ScrollReveal().reveal('.tagline5', { delay: 700, reset: true, distance: '100px', origin: 'left'});
+        ScrollReveal().reveal('.tagline6', { delay: 800, reset: true, distance: '100px', origin: 'left'});
+        ScrollReveal().reveal('.tagline7', { delay: 900, reset: true, distance: '100px', origin: 'left'});
+        ScrollReveal().reveal('.tagline8', { delay: 1000, reset: true, distance: '100px', origin: 'left'});
+
         window.addEventListener("scroll", function() {
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0)

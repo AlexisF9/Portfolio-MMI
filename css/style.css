@@ -180,16 +180,12 @@ i:hover {
     height: 100vh;
     background-color: white;
     position: relative;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;*/
 }
 
 .web, .graph {
     position: absolute;
     bottom: 0;
-    top: 0;
+    top: 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -218,20 +214,16 @@ i:hover {
     background-color: #1e1e1e23;
     font-family: spartan;
     transition: 1s all;
-}
-
-.div-stat:hover {
-    transform: scale(1.1);
+    border-radius: 50px;
 }
 
 .h-stat {
-    padding: 5px;
-    font-size: 20px;
+    padding-top: 5px;
+    font-size: 15px;
 }
 
 .stat {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 50px;
     padding-left: 20px;
 }
 
@@ -268,15 +260,23 @@ i:hover {
     width: 40%;
 }
 
-/*.logo {
-    width: 20vh;
-    transition: 1s all;
+.icones-web, .icones-graph {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
-.logo:hover {
-    transform: scale(1.2);
-}*/
+.icones-web div, .icones-graph div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.icones-web img, .icones-graph img {
+    height: 10vh;
+}
 
 
 /* -------------------------------REALISATION------------------------------*/
@@ -381,95 +381,3 @@ i:hover {
         flex-direction: column;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------POPUP------------------------------
-  
-.popup {
-    position: fixed;
-    top: 20%;
-    bottom: 20%;
-    left: 0;
-    right: 0;
-    background: #1e1e1e;
-    transition: opacity 400ms;
-    visibility: hidden;
-    opacity: 0;
-
-    margin: 70px auto;
-    padding: 20px;
-    border-radius: 5px;
-    width: 60%;
-    color: white;
-    font-family: poppins;
-    text-align: justify;
-  }
-  .popup:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  .popup h2 {
-    margin-top: 0;
-    color: white;
-    font-family: spartan;
-    padding-bottom: 20px;
-  }
-  .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-  }
-  .popup .close:hover {
-    color: tomato;
-  }
-  .popup .content {
-    overflow: auto;
-    padding-bottom: 20px;
-  }
-
-  .popup .content .separation2 {
-      padding-top: 10px;
-      padding-bottom: 10px;
-  }
-
-  .popup .div-stat {
-      width: 100%;
-      border: 1px solid white;
-  }
-
-  .stat1, .stat2, .stat3 {
-    padding-left: 20px;
-    background-color: tomato;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-.stat1 {
-    width: 80%;
-}
-.stat2 {
-    width: 50%;
-}
-.stat3 {
-    width: 70%;
-}*/
