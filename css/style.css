@@ -50,8 +50,8 @@ header {
 }
 
 header.sticky {
-    background-color: #1e1e1e7a;
-    height: 7vh;
+    background-color: #1e1e1e93;
+    height: 5vh;
 }
 
 header.sticky .titre1 {
@@ -88,6 +88,10 @@ nav {
 }
 
 .aheader:hover {
+    color: tomato;
+}
+
+.cv {
     color: tomato;
 }
 
@@ -173,6 +177,28 @@ i:hover {
     left: 45%;
 }
 
+.age, .mail {
+    padding-left: 20%;
+    color: black;
+    font-size: 15px;
+    font-family: spartan;
+    display: flex;
+    align-items: center;
+}
+
+.age i, .mail i {
+    color: black;
+}
+
+.age {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.mail {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
 
 /* -------------------------------competences------------------------------*/
 
@@ -182,100 +208,65 @@ i:hover {
     position: relative;
 }
 
-.web, .graph {
-    position: absolute;
-    bottom: 0;
-    top: 0px;
+.skills-1, .skills-2 {
+    height: 50%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
-.web {
-    left: 0;
-    right: 50%;
+.web, .graph, .outils {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    filter: grayscale(100%);
+    transition: 1s all;
 }
 
-.h-web, .h-graph {
+.web:hover, .graph:hover, .outils:hover {
+    filter: grayscale(0);
+    transform: scale(0.9);
+}
+
+.outils {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.web p, .outils p, .graph p {
+    text-align: justify;
+    font-family: poppins;
+    font-size: 15px;
+    width: 70%;
+}
+
+.outils p {
+    width: 50%;
+}
+
+.h-web, .h-graph, .h-outils {
     font-family: spartan;
     padding-bottom: 50px;
 }
 
-.graph {
-    left: 50%;
-    right: 0;
-}
-
-.div-stat {
-    width: 80%;
-    border: 1px solid #1e1e1e23;
-    margin: 10px;
-    background-color: #1e1e1e23;
-    font-family: spartan;
-    transition: 1s all;
-    border-radius: 50px;
-}
-
-.h-stat {
-    padding-top: 5px;
-    font-size: 15px;
-}
-
-.stat {
-    border-radius: 50px;
-    padding-left: 20px;
-}
-
-.stat1, .stat2, .stat3, .stat4 {
-    background-color: tomato;
-}
-.graph-stat1, .graph-stat2, .graph-stat3, .graph-stat4 {
-    background-color: teal;
-}
-
-.stat1 {
-    width: 90%;
-}
-.stat2 {
-    width: 80%;
-}
-.stat3 {
-    width: 60%;
-}
-.stat4 {
-    width: 40%;
-}
-
-.graph-stat1 {
-    width: 60%;
-}
-.graph-stat2 {
-    width: 50%;
-}
-.graph-stat3 {
-    width: 80%;
-}
-.graph-stat4 {
-    width: 40%;
-}
-
-.icones-web, .icones-graph {
+.icones-web, .icones-graph, .icones-outils {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.icones-outils {
+    width: 60%;
+}
+
+.icones-web img, .icones-graph img, .icones-outils img {
+    height: 100px;
     padding-bottom: 20px;
-}
-
-.icones-web div, .icones-graph div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icones-web img, .icones-graph img {
-    height: 10vh;
 }
 
 
