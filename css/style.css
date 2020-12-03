@@ -215,16 +215,15 @@ i:hover {
 /* -------------------------------competences------------------------------*/
 
 .skills {
-    height: 100vh;
+    height: auto;
     background-color: white;
     position: relative;
 }
 
-.skills-1, .skills-2 {
-    height: 50%;
+.skills {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -235,24 +234,20 @@ i:hover {
     width: 50%;
     /*filter: grayscale(100%);*/
     transition: 1s all;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-
+.web {
+    padding-top: 100px;
+}
 .outils {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    padding-bottom: 100px;
 }
 
 .web p, .outils p, .graph p {
     text-align: justify;
     font-family: poppins;
     font-size: 15px;
-    width: 70%;
-}
-
-.outils p {
-    width: 50%;
 }
 
 .h-web, .h-graph, .h-outils {
