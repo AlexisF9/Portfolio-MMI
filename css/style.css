@@ -262,10 +262,6 @@ i:hover {
     width: 100%;
 }
 
-.icones-outils {
-    width: 60%;
-}
-
 .icones-web img, .icones-graph img, .icones-outils img {
     height: 80px;
     padding-bottom: 20px;
@@ -298,6 +294,9 @@ i:hover {
     .aheader {
         font-size: 10px;
     }
+    .web, .graph, .outils {
+        width: 80%;
+    }
 }
 
 @media all and (max-width: 1040px) {
@@ -312,7 +311,7 @@ i:hover {
     }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 850px) {
     .presentation-h {
         font-size: 15px;
     }
@@ -326,11 +325,11 @@ i:hover {
 
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .reseaux {
         right: 5%;
     }
-    .ppropos, .presentation-h {
+    .ppropos, .presentation-h, .age, .mail {
         padding-left: 10%;
         padding-right: 10%;
     }
@@ -356,6 +355,30 @@ i:hover {
     }
     .ppropos {
         font-size: 12px;
+    }
+    .aheader {
+        margin-right: 10px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .cv {
+        display: none;
+    }
+}
+
+@media all and (max-width: 350px) {
+    header, .presentation, .skills {
+        display: none;
+    }
+    .erreur {
+        height: 100vh;
+        display: block;
+        font-family: poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
