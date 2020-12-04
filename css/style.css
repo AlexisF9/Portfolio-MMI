@@ -273,14 +273,87 @@ i:hover {
 .rea {
     height: 100vh;
     background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affiche {
+    height: 50%;
 }
 
 /* -------------------------------CONTACT------------------------------*/
 
 .contact {
-    height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+form {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.hcontact {
+    font-size: 30px;
+    font-family: spartan;
+}
+
+.separation2 {
+    background-color: black;
+    height: 4px;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pform {
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.form {
+    border: 1px solid silver;
+    color: white;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 20px;
+    transition: 0.5s all;
+    padding: 10px;
+}
+
+.form:hover {
+    transform: scale(1.05);
+    background-color: #363636;
+}
+
+.area {
+    height: 70px;
+}
+
+.submit {
+    width: 100px;
+    border: 1px solid silver;
+    color: black;
+    background-color: tomato;
+    border-radius: 10px;
+    height: 50px;
+    font-family: poppins;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.submit:hover {
+	background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    
+}
 
 /* -------------------------------RESPONSIVE------------------------------*/
 
@@ -397,3 +470,11 @@ i:hover {
         flex-direction: column;
     }
 }
+
+
+
+
+
+
+
+
