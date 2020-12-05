@@ -289,11 +289,12 @@ i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 form {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -353,6 +354,41 @@ form {
 	background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     
+}
+
+.contact-2 {
+    width: 50%;
+}
+
+.contact-github {
+    margin-bottom: 100px;
+}
+
+.contact-mail, .contact-linkedin, .contact-github {
+    display: flex;
+    align-items: center;
+}
+
+.contact-mail i, .contact-linkedin i, .contact-github i {
+    color: black;
+}
+
+.contact-mail{
+    color: black;
+}
+
+.contact-mail, .contact-linkedin a, .contact-github a {
+    font-family: spartan;
+    font-size: 18px;
+    transition: 0.5s all;
+}
+
+.contact-linkedin a, .contact-github a {
+    color: tomato;
+}
+
+.contact-linkedin a:hover, .contact-github a:hover {
+    letter-spacing: 2px;
 }
 
 /* -------------------------------RESPONSIVE------------------------------*/
