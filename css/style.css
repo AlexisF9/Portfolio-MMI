@@ -298,6 +298,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 50%;
+    transition: 0.5s all;
 }
 
 .hcontact {
@@ -351,13 +352,14 @@ form {
 }
 
 .submit:hover {
-	background: rgb(0, 0, 0);
+	background: #1f1f1f;
     color: rgb(255, 255, 255);
     
 }
 
 .contact-2 {
     width: 50%;
+    transition: 0.5s all;
 }
 
 .contact-github {
@@ -408,9 +410,27 @@ form {
     }
 }
 
+@media all and (max-width: 1200px) {
+    form {
+        width: 60%;
+    }
+    .contact-2 {
+        width: 60%;
+    }
+}
+
 @media all and (max-width: 1040px) {
     .titre1 {
         left: 5%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    form {
+        width: 80%;
+    }
+    .contact-2 {
+        width: 80%;
     }
 }
 
