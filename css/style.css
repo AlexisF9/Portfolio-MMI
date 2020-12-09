@@ -16,6 +16,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    z-index: 99999991;
+}
+
 .erreur {
     display: none;
 }
@@ -488,10 +492,19 @@ form {
     .aheader {
         margin-right: 10px;
     }
+    .icones-web img, .icones-graph img, .icones-outils img {
+        height: 50px;
+    }
 }
 
 @media all and (max-width: 400px) {
     .cv {
+        display: none;
+    }
+    .age, .mail {
+        font-size: 10px;
+    }
+    .presentation-h, .separation {
         display: none;
     }
 }
