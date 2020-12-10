@@ -16,7 +16,7 @@
     scroll-behavior: smooth;
 }
 
-body {
+header, .presentation, .skills, .rea, .contact {
     z-index: 99999991;
 }
 
