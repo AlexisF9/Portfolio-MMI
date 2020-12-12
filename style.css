@@ -1,0 +1,549 @@
+@font-face {
+    font-family: 'odachi';
+    src: url('./fonts/Odachi.otf');
+}
+
+@font-face {
+    font-family: 'bungeeshade';
+    src: url('./fonts/BungeeShade.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header, .presentation, .skills, .rea, .contact {
+    z-index: 99999991;
+}
+
+.erreur {
+    display: none;
+}
+
+/* -------------------------------SCROLLBAR------------------------------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+  }
+
+/* -------------------------------HEADER------------------------------*/
+
+header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: #1e1e1e;
+
+    position: fixed;
+    z-index: 99999;
+    transition: 1s all;
+}
+
+header.sticky {
+    background-color: #1e1e1e93;
+    height: 5vh;
+}
+
+header.sticky .titre1 {
+    display: none;
+}
+
+header.sticky nav {
+    position: initial;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transition: 1s all;
+}
+
+header.sticky .reseaux {
+    display: none;
+}
+
+.menu, ul, header {
+    display: flex;
+    flex-direction: row;
+}
+
+.titre1, .reseaux, nav {
+    position: absolute;
+}
+
+.titre1 {
+    left: 10%;
+    font-family: 'bungeeshade';
+    font-size: 35px;
+    color: white;
+    transition: 1s all;
+}
+
+nav {
+    right: 15%;
+}
+
+.aheader {
+    margin-right: 20px;
+    font-family: poppins;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    color: white;
+}
+
+.aheader:hover {
+    color: tomato;
+}
+
+.cv {
+    color: tomato;
+}
+
+.reseaux {
+    right: 5%;
+}
+
+i {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 40px;
+    transition: 0.5s all;
+    color: white;
+}
+
+i:hover {
+    
+    color: tomato;
+}
+
+/* -------------------------------presentation------------------------------*/
+
+.presentation {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("./img/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.presentaion-p {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation-h {
+    font-family: spartan;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.separation {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20%;
+    width: 100px;
+    border-top: 3px solid black;
+}
+
+.ppropos {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+    font-family: poppins;
+}
+
+.ppropos1 {
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+
+.ppropos2 {
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+.ppropos3 {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.apropos {
+    color: tomato;
+}
+
+.arrow {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
+.age, .mail {
+    padding-left: 20%;
+    color: black;
+    font-size: 15px;
+    font-family: spartan;
+    display: flex;
+    align-items: center;
+}
+
+.age i, .mail i {
+    color: black;
+}
+
+.age {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.mail {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+/* -------------------------------competences------------------------------*/
+
+.skills {
+    height: auto;
+    background-color: white;
+    position: relative;
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.web, .graph, .outils {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    /*filter: grayscale(100%);*/
+    transition: 1s all;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.web {
+    padding-top: 100px;
+}
+.outils {
+    padding-bottom: 100px;
+}
+
+.web p, .outils p, .graph p {
+    text-align: justify;
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.h-web, .h-graph, .h-outils {
+    font-family: spartan;
+    padding-bottom: 50px;
+}
+
+.icones-web, .icones-graph, .icones-outils {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.icones-web img, .icones-graph img, .icones-outils img {
+    height: 80px;
+    padding-bottom: 20px;
+}
+
+
+/* -------------------------------REALISATION------------------------------*/
+
+.rea {
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affiche {
+    height: 50%;
+}
+
+/* -------------------------------CONTACT------------------------------*/
+
+.contact {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    transition: 0.5s all;
+}
+
+.hcontact {
+    font-size: 30px;
+    font-family: spartan;
+}
+
+.separation2 {
+    background-color: black;
+    height: 4px;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pform {
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.form {
+    border: 1px solid silver;
+    color: white;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 20px;
+    transition: 0.5s all;
+    padding: 10px;
+}
+
+.form:hover {
+    transform: scale(1.05);
+    background-color: #363636;
+}
+
+.area {
+    height: 70px;
+}
+
+.submit {
+    width: 100px;
+    border: 1px solid silver;
+    color: black;
+    background-color: tomato;
+    border-radius: 10px;
+    height: 50px;
+    font-family: poppins;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.submit:hover {
+	background: #1f1f1f;
+    color: rgb(255, 255, 255);
+    
+}
+
+.contact-2 {
+    width: 50%;
+    transition: 0.5s all;
+}
+
+.contact-github {
+    margin-bottom: 100px;
+}
+
+.contact-mail, .contact-linkedin, .contact-github {
+    display: flex;
+    align-items: center;
+}
+
+.contact-mail i, .contact-linkedin i, .contact-github i {
+    color: black;
+}
+
+.contact-mail{
+    color: black;
+}
+
+.contact-mail, .contact-linkedin a, .contact-github a {
+    font-family: spartan;
+    font-size: 18px;
+    transition: 0.5s all;
+}
+
+.contact-linkedin a, .contact-github a {
+    color: tomato;
+}
+
+.contact-linkedin a:hover, .contact-github a:hover {
+    letter-spacing: 2px;
+}
+
+/* -------------------------------RESPONSIVE------------------------------*/
+
+@media all and (max-width: 1450px) {
+    .titre1 {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .aheader {
+        font-size: 10px;
+    }
+    .web, .graph, .outils {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    form {
+        width: 60%;
+    }
+    .contact-2 {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 1040px) {
+    .titre1 {
+        left: 5%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    form {
+        width: 80%;
+    }
+    .contact-2 {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 970px) {
+    nav {
+        display: none;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .presentation-h {
+        font-size: 15px;
+    }
+    .ppropos {
+        font-size: 15px;
+    }
+    .arrow {
+        width: 20%;
+        left: 40%;
+    }
+
+}
+
+@media all and (max-width: 700px) {
+    .reseaux {
+        right: 5%;
+    }
+    .ppropos, .presentation-h, .age, .mail {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .separation {
+      margin-left: 10%;  
+    }
+}
+
+@media all and (max-width: 470px) {
+    .reseaux {
+        display: none;
+    }
+    .titre1 {
+        position: initial;
+        font-size: 25px;
+    }
+    header {
+        justify-content: center;
+        height: 8vh;
+    }
+    .presentation-h {
+        font-size: 12px;
+    }
+    .ppropos {
+        font-size: 12px;
+    }
+    .aheader {
+        margin-right: 10px;
+    }
+    .icones-web img, .icones-graph img, .icones-outils img {
+        height: 50px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .cv {
+        display: none;
+    }
+    .age, .mail {
+        font-size: 10px;
+    }
+    .presentation-h, .separation {
+        display: none;
+    }
+}
+
+@media all and (max-width: 350px) {
+    header, .presentation, .skills {
+        display: none;
+    }
+    .erreur {
+        height: 100vh;
+        display: block;
+        font-family: poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+@media all and (max-height: 600px) {
+    header, .presentation, .skills {
+        display: none;
+    }
+    .erreur {
+        height: 100vh;
+        display: block;
+        font-family: poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
