@@ -16,7 +16,7 @@
     scroll-behavior: smooth;
 }
 
-header, .presentation, .skills, .rea, .contact {
+body {
     z-index: 99999991;
 }
 
@@ -216,7 +216,7 @@ i:hover {
     animation-duration: 2s;
 }
 
-/* -------------------------------competences------------------------------*/
+/* -------------------------------skills------------------------------*/
 
 .skills {
     height: auto;
@@ -335,7 +335,7 @@ form {
 }
 
 .form:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     background-color: #363636;
 }
 
