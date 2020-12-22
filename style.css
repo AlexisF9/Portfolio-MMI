@@ -8,6 +8,12 @@
     src: url('./fonts/BungeeShade.ttf');
 }
 
+@font-face {
+    font-family: 'lemon';
+    src: url('./fonts/LEMONMILK-Light.otf');
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -85,8 +91,9 @@ header.sticky .reseaux {
 
 .titre1 {
     left: 10%;
-    font-family: 'bungeeshade';
-    font-size: 35px;
+    font-family: 'lemon';
+    font-size: 25px;
+    letter-spacing: 3px;
     color: white;
     transition: 1s all;
 }
@@ -101,6 +108,7 @@ nav {
     text-transform: uppercase;
     transition: 0.5s all;
     color: white;
+    font-size: 15px;
 }
 
 .aheader:hover {
@@ -124,7 +132,6 @@ i {
 }
 
 i:hover {
-    
     color: tomato;
 }
 
@@ -146,6 +153,7 @@ i:hover {
 
 .presentation-h {
     font-family: spartan;
+    font-size: 20px;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -165,6 +173,7 @@ i:hover {
     padding-right: 20%;
     text-align: justify;
     font-family: poppins;
+    font-size: 15px;
 }
 
 .ppropos1 {
@@ -196,7 +205,7 @@ i:hover {
 .age, .mail {
     padding-left: 20%;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     font-family: spartan;
     display: flex;
     align-items: center;
@@ -324,9 +333,9 @@ form {
 }
 
 .form {
-    border: 1px solid silver;
+    border: 1px solid #363636;
     color: white;
-    background-color: #1f1f1f;
+    background-color: white;
     border-radius: 10px;
     height: 30px;
     margin-bottom: 20px;
@@ -359,6 +368,16 @@ form {
 	background: #1f1f1f;
     color: rgb(255, 255, 255);
     
+}
+
+/* -------------------------------FOOTER------------------------------*/
+
+footer {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contact-2 {
@@ -446,9 +465,6 @@ form {
 
 @media all and (max-width: 850px) {
     .presentation-h {
-        font-size: 15px;
-    }
-    .ppropos {
         font-size: 15px;
     }
     .arrow {
