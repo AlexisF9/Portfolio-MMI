@@ -303,7 +303,7 @@ i:hover {
 /* -------------------------------CONTACT------------------------------*/
 
 .contact {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,7 +312,7 @@ i:hover {
 
 form {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -442,9 +442,6 @@ footer {
     form {
         width: 60%;
     }
-    .contact-2 {
-        width: 60%;
-    }
 }
 
 @media all and (max-width: 1040px) {
@@ -457,8 +454,11 @@ footer {
     form {
         width: 80%;
     }
-    .contact-2 {
-        width: 80%;
+    .titre-footer {
+        font-size: 15px;
+    }
+    .contact-mail, .contact-linkedin a, .contact-github a, .contact-cv a {
+        font-size: 13px;
     }
 }
 
@@ -516,6 +516,16 @@ footer {
     .icones-web img, .icones-graph img, .icones-outils img {
         height: 50px;
     }
+    footer {
+        flex-direction: column;
+    }
+    .titre-footer {
+        padding-top: 50px;
+        padding-right: 0px;
+    }
+    .contact-2 {
+        padding-top: 20px;
+    }
 }
 
 @media all and (max-width: 400px) {
@@ -528,10 +538,13 @@ footer {
     .presentation-h, .separation {
         display: none;
     }
+    .hcontact {
+        font-size: 20px;
+    }
 }
 
 @media all and (max-width: 350px) {
-    header, .presentation, .skills {
+    header, .presentation, .skills, .rea, .contact, footer {
         display: none;
     }
     .erreur {
@@ -547,7 +560,7 @@ footer {
 
 
 @media all and (max-height: 600px) {
-    header, .presentation, .skills {
+    header, .presentation, .skills, .rea, .contact, footer {
         display: none;
     }
     .erreur {
