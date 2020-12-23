@@ -60,7 +60,7 @@ header {
 }
 
 header.sticky {
-    background-color: #1e1e1e93;
+    background-color: #1e1e1eaf;
     height: 5vh;
 }
 
@@ -97,6 +97,11 @@ header.sticky .reseaux {
     color: white;
     transition: 1s all;
 }
+
+/*.titre1:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+}*/
 
 nav {
     right: 15%;
@@ -298,7 +303,7 @@ i:hover {
 /* -------------------------------CONTACT------------------------------*/
 
 .contact {
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,11 +338,12 @@ form {
 }
 
 .form {
-    border: 1px solid #363636;
+    border: 1px solid black;
     color: white;
-    background-color: white;
+    background-color: #363636;
     border-radius: 10px;
     height: 30px;
+    margin-top: 5px;
     margin-bottom: 20px;
     transition: 0.5s all;
     padding: 10px;
@@ -345,75 +351,74 @@ form {
 
 .form:hover {
     transform: scale(1.03);
-    background-color: #363636;
 }
 
 .area {
-    height: 70px;
+    height: 80px;
 }
 
 .submit {
     width: 100px;
-    border: 1px solid silver;
+    border: 1px solid black;
     color: black;
-    background-color: tomato;
+    background-color: white;
     border-radius: 10px;
-    height: 50px;
+    height: 40px;
     font-family: poppins;
     cursor: pointer;
     transition: 0.5s all;
 }
 
 .submit:hover {
-	background: #1f1f1f;
-    color: rgb(255, 255, 255);
-    
+	background: tomato;   
 }
 
 /* -------------------------------FOOTER------------------------------*/
 
 footer {
-    height: auto;
+    width: 100%;
+    background-color: #1e1e1e;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+
+.titre-footer {
+    padding-right: 20px;
+    font-family: 'lemon';
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: white;
+    transition: 1s all;
 }
 
 .contact-2 {
-    width: 50%;
     transition: 0.5s all;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.contact-github {
-    margin-bottom: 100px;
-}
-
-.contact-mail, .contact-linkedin, .contact-github {
+.contact-mail, .contact-linkedin, .contact-github, .contact-cv {
     display: flex;
     align-items: center;
 }
 
-.contact-mail i, .contact-linkedin i, .contact-github i {
-    color: black;
+.contact-mail, .contact-mail i, .contact-linkedin i, .contact-github i, .contact-cv i {
+    color: white;
 }
 
-.contact-mail{
-    color: black;
-}
-
-.contact-mail, .contact-linkedin a, .contact-github a {
+.contact-mail, .contact-linkedin a, .contact-github a, .contact-cv a {
     font-family: spartan;
-    font-size: 18px;
+    font-size: 15px;
     transition: 0.5s all;
 }
 
-.contact-linkedin a, .contact-github a {
+.contact-linkedin a, .contact-github a, .contact-cv a {
     color: tomato;
 }
 
-.contact-linkedin a:hover, .contact-github a:hover {
-    letter-spacing: 2px;
+.contact-linkedin a:hover, .contact-github a:hover, .contact-cv a:hover {
+    letter-spacing: 3px;
 }
 
 /* -------------------------------RESPONSIVE------------------------------*/
