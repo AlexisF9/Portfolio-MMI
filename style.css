@@ -181,21 +181,6 @@ i:hover {
     font-size: 15px;
 }
 
-.ppropos1 {
-    animation: fadeInLeft;
-    animation-duration: 1s;
-}
-
-.ppropos2 {
-    animation: fadeInLeft;
-    animation-duration: 1.5s;
-}
-
-.ppropos3 {
-    animation: fadeInLeft;
-    animation-duration: 2s;
-}
-
 .apropos {
     color: tomato;
 }
@@ -218,16 +203,6 @@ i:hover {
 
 .age i, .mail i {
     color: black;
-}
-
-.age {
-    animation: fadeInLeft;
-    animation-duration: 2s;
-}
-
-.mail {
-    animation: fadeInLeft;
-    animation-duration: 2s;
 }
 
 /* -------------------------------skills------------------------------*/
