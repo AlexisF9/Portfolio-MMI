@@ -282,24 +282,102 @@ i:hover {
     z-index: 1;
 }
 
-.div-rea {
+.card {
+    z-index: 1;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.card a {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 25px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s all;
+}
+
+.card1 {
+    background-image: url("./rea/affiche2.JPG");
+}
+
+.card2 {
+    background-image: url("./rea/data.JPG");
+}
+
+.card3 {
+    background-image: url("./rea/form.JPG");
+
+}
+
+.card4 {
+    background-image: url("./rea/portfolio2019.JPG");
+}
+
+.card5 {
+    background-image: url("./rea/mangactu.JPG");
+}
+
+.filtre p {
+    color: white;
+    font-family: poppins;
+    text-align: center;
+    background-color: tomato;
+    width: 100%;
+}
+
+.filtre {
+    background-color: rgba(0, 0, 0, 0.411);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1:hover .filtre, .card2:hover .filtre, .card3:hover .filtre, .card4:hover .filtre {
+    opacity: 0;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+    transform: scale(1.03);
+}
+
+/*
+
+.div-infographie {
     display: flex;
     flex-direction: row;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+.div-web {
     z-index: 1;
     padding-bottom: 100px;
 }
 
-.div-rea, .div-rea img {
+.div-infographie, .div-infographie img, .div-web img {
     height: 400px;
 }
 
-.card-1, .card-2 {
+.card-1, .card-2, .card-3 {
     margin-left: 5px;
     margin-right: 5px;
     position: relative;
 }
 
-.card-1 div, .card-2 div {
+.card-1 div, .card-2 div, .card-3 div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,16 +393,16 @@ i:hover {
     background-color: tomato;
   }
 
-  .card-1 div p, .card-2 div p {
+  .card-1 div p, .card-2 div p, .card-3 div p {
     text-align: center;
     font-family: poppins;
     color: white;
   }
 
-  .card-1:hover div, .card-2:hover div {
+  .card-1:hover div, .card-2:hover div, .card-3:hover div {
     opacity: 1;
   }
-
+*/
 
 /* -------------------------------CONTACT------------------------------*/
 
