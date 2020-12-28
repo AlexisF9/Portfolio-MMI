@@ -64,10 +64,10 @@
             <div class="graph">
                 <h1 class="h-graph">Compétences graphique</h1>
                 <div class="icones-graph">
-                    <img class="tagline5" src="./img/photoshop.png">
-                    <img class="tagline6" src="./img/illustrator.png">
-                    <img class="tagline7" src="./img/premiere.png">
-                    <img class="tagline8" src="./img/indesign.webp">
+                    <img class="tagline" src="./img/photoshop.png">
+                    <img class="tagline2" src="./img/illustrator.png">
+                    <img class="tagline3" src="./img/premiere.png">
+                    <img class="tagline4" src="./img/indesign.webp">
                 </div>
                 <p>Avec mes compétences dans les différents logiciels de la suite Adobe, je suis capable de créer des affiches, infographies et mises en pages professionnels et également de faire du montage vidéo.</p>
             </div>
@@ -102,22 +102,22 @@
         <h1 class="rea-h">Mes réalisations</h1>
         
         <div class="cards">
-            <a href="./rea/Flacher-Alexis-affiche.pdf" target="blank_" class="card card1">
+            <a href="./rea/Flacher-Alexis-affiche.pdf" target="blank_" class="tagline5 card card1">
                 <div class="filtre"><p>Affiche réalisé sur Photoshop</p></div>
             </a>
-            <a href="./rea/Flacher-Alexis-data.pdf" target="blank_" class="card card2">
+            <a href="./rea/Flacher-Alexis-data.pdf" target="blank_" class="tagline6 card card2">
                 <div class="filtre"><p>Datavision réalisé sur Illustrator</p></div>
             </a>
-            <a href="https://github.com/AlexisF9/FormulaireContact" target="blank_" class="card card3">
+            <a href="https://github.com/AlexisF9/FormulaireContact" target="blank_" class="tagline7 card card3">
                 <div class="filtre"><p>Formulaire de contact en PHP</p></div>
             </a>
-            <a href="" target="blank_" class="card card4">
+            <a href="" target="blank_" class="tagline8 card card4">
                 <div class="filtre"><p>Premier portfolio en Bootstrap</p></div>
             </a>
-            <a href="" target="blank_" class="card card5">
+            <a href="" target="blank_" class="tagline9 card card5">
                 <div class="filtre"><p>Site statique actualités manga</p></div>
             </a>
-            <a href="" target="blank_" class="card card6">
+            <a href="" target="blank_" class="tagline10 card card6">
                 <div class="filtre"><p>Motif réalisé sur Illustrator</p></div>
             </a>
         </div>
@@ -157,10 +157,13 @@
         ScrollReveal().reveal('.tagline2', { delay: 400, distance: '100px', origin: 'left'});
         ScrollReveal().reveal('.tagline3', { delay: 500, distance: '100px', origin: 'left'});
         ScrollReveal().reveal('.tagline4', { delay: 600, distance: '100px', origin: 'left'});
-        ScrollReveal().reveal('.tagline5', { delay: 300, distance: '100px', origin: 'left'});
-        ScrollReveal().reveal('.tagline6', { delay: 400, distance: '100px', origin: 'left'});
-        ScrollReveal().reveal('.tagline7', { delay: 500, distance: '100px', origin: 'left'});
-        ScrollReveal().reveal('.tagline8', { delay: 600, distance: '100px', origin: 'left'});
+
+        ScrollReveal().reveal('.tagline5', { delay: 500, distance: '100px', origin: 'bottom'});
+        ScrollReveal().reveal('.tagline6', { delay: 550, distance: '100px', origin: 'bottom'});
+        ScrollReveal().reveal('.tagline7', { delay: 600, distance: '100px', origin: 'bottom'});
+        ScrollReveal().reveal('.tagline8', { delay: 650, distance: '100px', origin: 'bottom'});
+        ScrollReveal().reveal('.tagline9', { delay: 700, distance: '100px', origin: 'bottom'});
+        ScrollReveal().reveal('.tagline10', { delay: 750, distance: '100px', origin: 'bottom'});
 
         window.addEventListener("scroll", function() {
             var header = document.querySelector("header");
@@ -169,26 +172,3 @@
     </script>
 </body>
 </html>
-
-<!-- <div class="div-infographie">
-            <div class="card-1">
-                <img class="affiche" src="./rea/affiche.jpg" alt="Affiche">
-                <div>
-                    <p>Affiche réalisé sur Photoshop et Illustrator</p>
-                </div>
-            </div>
-            <div class="card-2">
-                <img class="data" src="./rea/data.jpg" alt="Datavision">
-                <div>
-                    <p>Datavision réalisé sur Illustrator</p>
-                </div>
-            </div>
-        </div>
-        <div class="div-web">
-            <div class="card-3">
-                <img class="site2019" src="./rea/portfolio2019.JPG" alt="Portfolio de 2019">
-                <div>
-                    <p>Réalisation de mon premier portfolio en 2019 avec du HTML, CSS, Javascript et Bootstrap</p>
-                </div>
-            </div>
-        </div>-->
