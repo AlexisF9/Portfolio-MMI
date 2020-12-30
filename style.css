@@ -301,7 +301,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     transition: 0.5s all;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .card1 {
@@ -336,8 +336,8 @@ i:hover {
     background-color: tomato;
     padding: 5%;
     width: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .filtre {
@@ -411,7 +411,8 @@ form {
 }
 
 .form:hover {
-    transform: scale(1.03);
+    background-color: rgb(104, 104, 104);
+    border: 1px solid silver;
 }
 
 .area {
