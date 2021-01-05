@@ -305,7 +305,7 @@ i:hover {
 }
 
 .card1 {
-    background-image: url("./rea/affiche2.jpg");
+    background-image: url("./rea/affiche2.JPG");
 }
 
 .card2 {
@@ -615,7 +615,7 @@ footer {
     }
 }
 
-@media all and (max-width: 350px) {
+/*@media all and (max-width: 350px) {
     header, .presentation, .skills, .rea, .contact, footer {
         display: none;
     }
@@ -645,7 +645,7 @@ footer {
         flex-direction: column;
     }
 }
-
+*/
 
 
 
