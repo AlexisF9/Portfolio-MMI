@@ -295,8 +295,8 @@ i:hover {
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 25px;
     background-size: cover;
     background-position: center;
@@ -305,7 +305,7 @@ i:hover {
 }
 
 .card1 {
-    background-image: url("./rea/affiche2.JPG");
+    background-image: url("./rea/affiche2.jpg");
 }
 
 .card2 {
@@ -314,7 +314,6 @@ i:hover {
 
 .card3 {
     background-image: url("./rea/form.JPG");
-
 }
 
 .card4 {
